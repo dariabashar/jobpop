@@ -1,0 +1,49 @@
+{
+  "name": "jobpop-backend",
+  "version": "1.0.0",
+  "description": "Backend API for JobPop - job marketplace platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "dev:mock": "nodemon src/server-dev.js",
+    "test": "jest",
+    "test:mongodb": "node test-mongodb.js",
+    "test:connection": "node test-mongodb-connection.js",
+    "init-db": "node src/init-db.js"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.41.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.4",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.7",
+    "socket.io": "^4.7.4",
+    "stripe": "^14.7.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "keywords": [
+    "job",
+    "marketplace",
+    "api",
+    "express",
+    "mongodb"
+  ],
+  "author": "JobPop Team",
+  "license": "MIT"
+}

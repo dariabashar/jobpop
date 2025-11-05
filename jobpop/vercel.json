@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "name": "jobpop",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_API_URL": "https://your-backend-url.vercel.app"
+  },
+  "functions": {
+    "app/**/*.tsx": {
+      "maxDuration": 10
+    }
+  }
+}
