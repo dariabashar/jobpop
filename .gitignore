@@ -1,0 +1,7 @@
+node_modules/
+backend/node_modules/
+jobpop/node_modules/
+.env
+.next/
+build/
+.dart_tool/
